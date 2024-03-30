@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  flask_app:
+    container_name: flask_app
+    build: .
+    network_mode: host
+    volumes:
+      - ./src:/app
+    environment:
+      - FLASK_ENV=development
+      - DB_USER=postgres
+      - DB_PASSWORD=capstone_2024
+      - DB_HOST=localhost
+      - DB_PORT=5432
+      - DB_NAME=chatbot_development
+      - OPENAI_API_KEY=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
+      - APP_SECRET_KEY=d919c1ea-5067-4785-b747-04aa07f94520

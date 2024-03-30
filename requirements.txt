@@ -1,0 +1,8 @@
+flask
+psycopg2-binary
+Flask-SQLAlchemy
+openai
+flask-migrate
+flask-admin
+flask-cors
+gunicorn
